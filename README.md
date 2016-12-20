@@ -36,3 +36,32 @@ Fluentd input plugin for AWS CloudTrail
   </store>
 </match>
 ```
+
+## IAM Policy
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "sqs:GetQueueUrl",
+                "sqs:ReceiveMessage",
+                "sqs:DeleteMessage"
+            ],
+            "Resource": "arn:aws:sqs:us-east-1:123456789012:cloudtrail-sqs-queue-name",
+            "Effect": "Allow",
+            "Sid": "AllowReadSqs"
+        },
+        {
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::cloudtrail-bucket-name/*",
+            "Effect": "Allow",
+            "Sid": "AllowReadS3Objects"
+        }
+    ]
+}
+```
+

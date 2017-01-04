@@ -1,6 +1,20 @@
 # fluent-plugin-cloudtrail
 Fluentd input plugin for AWS CloudTrail
 
+## Install
+
+### RubyGems
+
+```
+$ gem install fluent-plugin-cloudtrail
+```
+
+### td-agent
+
+```
+$ td-agent-gem install fluent-plugin-cloudtrail
+```
+
 ## Example config
 
 ```

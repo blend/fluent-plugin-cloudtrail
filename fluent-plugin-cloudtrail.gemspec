@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |s|
   s.name   = 'fluent-plugin-cloudtrail'
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.date = '2017-01-03'
   s.summary = %q{Deprecated: Consider using fluent-plugin-s3.
       

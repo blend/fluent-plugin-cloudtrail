@@ -1,4 +1,7 @@
 # fluent-plugin-cloudtrail
+
+*Deprecated: Consider using fluent-plugin-s3.*
+
 Fluentd input plugin for AWS CloudTrail
 
 ## Install
